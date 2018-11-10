@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content=";url="> <!--设置跳转时间和跳转页面-->
+	<link rel="icon" href="images/logo/timg.jpg"><!--设置logo-->
+	<title>欢迎</title>
+	<style type="text/css" media="screen">
+		#body{
+			z-index: 0;
+			background: url(images/background/4.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 1400px;
+		}
+		.欢迎{
+			z-index: 1;
+			width: 370px;
+			height: 110px;
+			margin-left: 500px;
+			margin-top: 80px;
+			text-align: center;
+			background: url(images/艺术字/timg.gif);
+			background-repeat: no-repeat;
+			/*border: 1px red solid;*/
+		}
+		.跳转文字{
+			z-index: 1;
+			width: 400px;
+			height: 100px;
+			margin-top: 20px;
+			margin-left: 480px;
+			text-align: center;
+			/*border: 1px red solid;*/
+		}
+		.h1{
+			font-style: normal;
+			font-family:宋体;
+			font-size: 40px;
+			color: #560CFF;
+			letter-spacing: 2px;
+		}
+		.跳转字符{
+			z-index: 1;
+			width: 300px;
+			height: 200px;
+			margin-left: 520px;
+			text-align: center;
+			font-size: 150px;
+			color: #7857EC;
+			/*border: 1px red solid;*/
+		}	
+	</style>
+	<script type="text/javascript">
+		var n=3;
+		var num=setInterval(function(){ number() },1000);//计时重复调用函数 计时单位毫秒
+		function number(){
+			if(n>0){
+			   document.getElementById("nu").innerHTML = n--;				
+			}
+			else{
+				clearInterval(num);//停止setInterval();
+				// document.getElementById("nu").innerHTML="go!";				
+				window.location.href='上饶政府网.html';//跳转网页
+			}
+		}
+	</script>
+</head>
+<body id="body">
+<div class="欢迎">
+	
+</div>
+<div class="跳转文字">
+	<h1 class="h1">即将跳转至目标网页</h1>
+</div>
+<div class="跳转字符" id="nu">
+	
+</div>
+</body>
+</html>
